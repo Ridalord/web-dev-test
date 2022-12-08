@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./img/logo-mastercraft.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><!--Commision Font Link-->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"><!--CSS Link-->
   
   <title>Crowdfunding product page</title>
 </head>
 <body>
   <div class="wrap">
+    <!--Navigation Bar-->
     <nav class="navbar">
       <div id="nav-overlay">
         <div class="over-links">
@@ -42,6 +43,7 @@
         </li>
       </ul>
     </nav>
+    <!--Content-->
     <section>
       <div class="monitor">
         <img class="mastercraft-logo" src="./img/logo-mastercraft.svg" alt="Mastercraft Logo" />
@@ -82,11 +84,14 @@
         comfortable while at work, helping you stay focused on the task at hand.</p>
         <p class="grey">Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow
         notepads, pens, and USB sticks to be stored under the stand.</p>
+        <!--Cards-->
         <div id="parent" class="stands-wrap">
           <div id="0" class="add-card" onclick="add()">
             <img src="img/icons8-plus-math-30.png" alt="Add" >
             <p>Add Card</p>
           </div>
+
+          <!--Card 1-->
           <div id="1" class="stands monitor">
             <ul class="flex stand-top">
               <li>
@@ -113,6 +118,7 @@
             <div class="remove" onclick="remove(this.parentNode.id)"><img src="img/icons8-minus-sign-red-64.png" alt=""></div>
           </div>
 
+          <!--Card 2-->
           <div id="2" class="stands monitor">
             <ul class="flex stand-top">
               <li>
@@ -138,6 +144,7 @@
             <div class="remove" onclick="remove(this.parentNode.id)"><img src="img/icons8-minus-sign-red-64.png" alt=""></div>
           </div>
 
+          <!--Card 3-->
           <div id="3" class="stands monitor null">
             <ul class="flex stand-top">
               <li>
@@ -163,6 +170,7 @@
             <div class="remove" onclick="remove(this.parentNode.id)"><img src="img/icons8-minus-sign-red-64.png" alt=""></div>
           </div>
 
+          <!--Card 4-->
           <div id="4" class="stands monitor">
             <ul class="flex stand-top">
               <li>
@@ -194,6 +202,8 @@
     </section>
     
   </div>
+
+  <!--Support Pop-up-->
   <div id="overlay">
     <div class="support">
       <img src="img/icon-check.svg" alt="check" class="check">
@@ -204,5 +214,6 @@
     </div>
   </div>
 </body>
-    <script src="app.js" type="text/javascript" charset="utf-8"></script>
+  <!--Javascript Link-->
+  <script src="app.js" type="text/javascript" charset="utf-8"></script>
 </html>
