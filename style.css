@@ -265,7 +265,6 @@ button:hover {
     .mastercraft-logo{
         top: 0;
         left: 40%;
-        transform: translateY(-50%);
     }
     .master-header{
         line-height: 1;
