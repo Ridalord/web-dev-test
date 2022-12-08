@@ -24,6 +24,7 @@ ul{
     height: 50vh;
     background-image: url(./img/image-hero-desktop.jpg);
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-top: 35px;
 }
