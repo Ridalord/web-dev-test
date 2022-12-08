@@ -63,6 +63,9 @@ section {
     transform: translateX(-50%);
     transform: translateY(-50%);
 }
+.top li{
+    align-self: center;
+}
 .master-header{
     padding-top: 45px;
     font-size: 28px;
@@ -265,7 +268,7 @@ button:hover {
         margin-bottom: 15px;
     }
     .monitor{
-        padding: 0 30px 30px;
+        padding: 20px 30px 30px;
     }
     .monitor p{
         line-height: 1.5;
@@ -319,7 +322,7 @@ button:hover {
     }
     .over-links{
         background-color: white;
-        width: 350px;
+        width: 80%;
         position: absolute;
         left: 50%;
         top: 80px;
