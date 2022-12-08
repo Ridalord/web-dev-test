@@ -46,8 +46,8 @@ ul{
 }
 section {
     width: 55%;
-    margin: 0 auto;
-    transform: translateY(-95px);
+    margin: -95px auto 0;
+    /* transform: translateY(-95px); */
 }
 .monitor{
     background-color: white;
@@ -263,8 +263,9 @@ button:hover {
         font-size: 25px;
     }
     .mastercraft-logo{
-        top: 0;
+        /* top: 0; */
         left: 40%;
+        margin-top: -20px;
     }
     .master-header{
         line-height: 1;
