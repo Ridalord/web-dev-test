@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/logo-mastercraft.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
@@ -82,8 +82,12 @@
         comfortable while at work, helping you stay focused on the task at hand.</p>
         <p class="grey">Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow
         notepads, pens, and USB sticks to be stored under the stand.</p>
-        <div class="stands-wrap">
-          <div class="stands monitor">
+        <div id="parent" class="stands-wrap">
+          <div id="0" class="add-card" onclick="add()">
+            <img src="img/icons8-plus-math-30.png" alt="Add" >
+            <p>Add Card</p>
+          </div>
+          <div id="1" class="stands monitor">
             <ul class="flex stand-top">
               <li>
                 <h3 class="stand-head">Bamboo Stand</h3>
@@ -106,9 +110,10 @@
                 <button class="cyan-dark stand-button" onclick='getReward()'>Select Reward</button>
               </li>
             </ul>
+            <div class="remove" onclick="remove(this.parentNode.id)"><img src="img/icons8-minus-sign-red-64.png" alt=""></div>
           </div>
 
-          <div class="stands monitor">
+          <div id="2" class="stands monitor">
             <ul class="flex stand-top">
               <li>
                 <h3 class="stand-head">Black Edition Stand</h3>
@@ -130,9 +135,10 @@
                 <button class="cyan-dark stand-button" onclick="getReward()">Select Reward</button>
               </li>
             </ul>
+            <div class="remove" onclick="remove(this.parentNode.id)"><img src="img/icons8-minus-sign-red-64.png" alt=""></div>
           </div>
 
-          <div class="stands monitor null">
+          <div id="3" class="stands monitor null">
             <ul class="flex stand-top">
               <li>
                 <h3 class="stand-head">Mahogany Special Edition</h3>
@@ -154,32 +160,34 @@
                 <button class="cyan-dark stand-button">Out of Stock</button>
               </li>
             </ul>
+            <div class="remove" onclick="remove(this.parentNode.id)"><img src="img/icons8-minus-sign-red-64.png" alt=""></div>
           </div>
 
-          <!-- <div class="stands monitor">
+          <div id="4" class="stands monitor">
             <ul class="flex stand-top">
               <li>
-                <h3 class="stand-head">Bamboo Stand</h3>
+                <h3 class="stand-head">Black Edition Stand</h3>
               </li>
               <li>
-                <p class="cyan">Pledge $25 or more</p>
+                <p class="cyan">Pledge $75 or more</p>
               </li>
             </ul>
-            <p class="grey">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign,
-              and you’ll be added
-              to a special Backer member list.</p>
+            <p class="grey">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+              member list.
+              Shipping is included.</p>
             <ul class="flex stand-bottom">
-              <li>
-                <h1 class="track">101</h1>
+              <li class="stand-head">
+                <h1 class="track">64</h1>
               </li>
-              <li>
+              <li class="stand-left">
                 <p class="grey">left</p>
               </li>
-              <li class="auto">
-                <button class="cyan-dark stand-button">Select Reward</button>
+              <li class="auto stand-click">
+                <button class="cyan-dark stand-button" onclick="getReward()" >Select Reward</button>
               </li>
             </ul>
-          </div> -->
+            <div class="remove" onclick="remove(this.parentNode.id)"><img src="img/icons8-minus-sign-red-64.png" alt=""></div>
+          </div>
           </div>
         </div>
         

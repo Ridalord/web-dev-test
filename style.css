@@ -92,7 +92,7 @@ button {
     border-radius: 30px;
     cursor: pointer;
 }
-button:hover {
+button, .add-card:hover {
     background-color: hsl(176, 72%, 28%);
 }
 .bookmark h3{
@@ -245,10 +245,42 @@ button:hover {
 .menu{
     display: none;
 }
+.remove{
+    background: none;
+    width: fit-content;
+    position: absolute;
+    margin-left: 500px;
+    transform: translateY(-70%);
+    cursor: pointer;
+}
+.remove img{
+    width: 35px;
+}
+.add-card{
+    display: flex;
+    background-color: hsl(176, 50%, 47%);
+    width: fit-content;
+    border-radius: 30px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin: 0 5px 15px auto;
+}
+.add-card img{
+    height: 25px;
+    width: 25px;
+    margin: auto 0;
+}
+.add-card p{
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
 
 @media screen and (max-width: 680px){
     .navbar{
         padding-top: 20px;
+        background-image: url(img/image-hero-mobile.jpg);
     }
     .nav-links, section{
         width: 85%;
@@ -264,7 +296,6 @@ button:hover {
         font-size: 25px;
     }
     .mastercraft-logo{
-        /* top: 0; */
         left: 40%;
         margin-top: -20px;
     }
@@ -365,6 +396,25 @@ button:hover {
     .support p{
         font-size: 13px;
     }
+    .remove {
+        margin-left: 180px;
+        transform: translateY(-70%);
+    }
+    .add-card {
+        padding: 5px 10px;
+        margin: 0 5px 15px auto;
+    }
+
+    .add-card img {
+        height: 20px;
+        width: 20px;
+        margin: auto 0;
+    }
+
+    .add-card p {
+        font-size: 15px;
+    }
+
     
 }
 
