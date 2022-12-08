@@ -262,6 +262,11 @@ button:hover {
     .logo{
         font-size: 25px;
     }
+    .mastercraft-logo{
+        top: 0;
+        left: 40%;
+        transform: translateY(-50%);
+    }
     .master-header{
         line-height: 1;
         font-size: 25px;
@@ -274,7 +279,7 @@ button:hover {
         line-height: 1.5;
     }
     .bookmark{
-        width: 50px;
+        width: 55px;
     }
     .buttons{
         width: 90%;
@@ -284,7 +289,6 @@ button:hover {
         flex-direction: column;
     }
     ul.flex li{
-        /* text-align: center; */
         margin: 0 auto;
         width: fit-content;
         padding: 15px 0;
@@ -340,6 +344,21 @@ button:hover {
     }
     .over-list a{
         color: black;
+    }
+    .support{
+        width: 80%;
+        padding-top: 30px;
+    }
+    .check{
+        width: 70px;
+        margin-bottom: 10px;
+    }
+    .support h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .support p{
+        font-size: 13px;
     }
     
 }
